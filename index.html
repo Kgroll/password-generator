@@ -11,12 +11,37 @@
   <body>
     <script type="text/javascript">
     window.prompt("How long would you like the password to be? Please enter a number from 8 to 128.");
-      confirm("Do you want to use special characters? Yes or No");
-      confirm("Do you want to use numeric characters? Yes or No");
-      confirm("Do you want to use uppercase characters? Yes or No");
-      confirm("Do you want to use lowercase characters? Yes or No");
-      console.log
-    
+      var specialCharacter = confirm("Do you want to use special characters? Yes or No");
+      if (specialCharacter) {
+          alert("You said yes to special characters!");
+      }
+      else {
+          alert("You said no to special characters!");
+      }
+      var numCharacters = confirm("Do you want to use numeric characters? Yes or No");
+      if (numCharacters) {
+          alert("You said yes to numeric characters!");
+      }
+      else {
+        alert("You said no to numeric characters!")
+      }
+
+      var upperCase = confirm("Do you want to use uppercase characters? Yes or No");
+      if (upperCase) {
+          alert("You said yes to uppercase characters!");
+      }
+      else {
+        alert("You said no to uppercase characters!")
+      }
+
+      var lowerCase = confirm("Do you want to use lowercase characters? Yes or No");
+      if (lowerCase) {
+          alert("You said yes to lower \case characters!");
+      }
+      else {
+        alert("You said no to lowercase characters!")
+      }
+
     </script>
     <div class="wrapper">
       <header>
@@ -39,6 +64,6 @@
         </div>
       </div>
     </div>
-    <script src=".\Develop\script.js"></script>
+    <script src="jsstyle.css"></script>
   </body>
 </html>
