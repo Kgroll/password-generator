@@ -1,0 +1,44 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  <body>
+    <script type="text/javascript">
+    window.prompt("How long would you like the password to be? Please enter a number from 8 to 128.");
+      confirm("Do you want to use special characters? Yes or No");
+      confirm("Do you want to use numeric characters? Yes or No");
+      confirm("Do you want to use uppercase characters? Yes or No");
+      confirm("Do you want to use lowercase characters? Yes or No");
+      console.log
+    
+    </script>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src=".\Develop\script.js"></script>
+  </body>
+</html>
