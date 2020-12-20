@@ -15,13 +15,14 @@ var passwordGroup = "";
  passwordLength = prompt("How long would you like the password to be? Please enter a number from 8 to 128."); 
 
     if (passwordLength<8){              
-        alert("Please enter a number between 8 and 128");
+        alert("Your password does not meet the necessary requirements, please refresh the screen and enter a number from 8 to 128");
         determineLength();
+       
     }else if (passwordLength>128){
-        alert("Please enter a number between 8 and 128");
+        alert("Your password does not meet the necessary requirements, please refresh the screen and enter a number from 8 to 128");
         determineLength();
     }else if (isNaN(passwordLength)){
-        alert("Please enter a number between 8 and 128");
+        alert("Your password does not meet the necessary requirements, please refresh the screen and enter a number from 8 to 128");
     }else{
         alert("Thank you! Please answer the following questions, you must say yes to at least 1 type of character!");
 }
@@ -31,46 +32,48 @@ var passwordGroup = "";
       
 var selectspecialCharacter = confirm("Do you want to use special characters? Yes or No");
  if (selectspecialCharacter) {
-     alert("You said yes to special characters!");    
+     alert("You said YES to special characters!");    
  }
  else {
-     alert("You said no to special characters!");
+     alert("You said NO to special characters!");
      
    }
    
 
 var selectnumCharacters = confirm("Do you want to use numeric characters? Yes or No");
   if (selectnumCharacters) {
-      alert("You said yes to numeric characters!");
+      alert("You said YES to numeric characters!");
       
   }
   else {
-    alert("You said no to numeric characters!")
+    alert("You said NO to numeric characters!")
   }
  
 var selectupperCaseCharacters = confirm("Do you want to use uppercase characters? Yes or No");
   if (selectupperCaseCharacters) {
-      alert("You said yes to uppercase characters!");
+      alert("You said YES to uppercase characters!");
       
   }
   else {
-    alert("You said no to uppercase characters!")
+    alert("You said NO to uppercase characters!")
   }
   
 var selectlowerCaseCharacters = confirm("Do you want to use lowercase characters? Yes or No");
   if (selectlowerCaseCharacters) {
-      alert("You said yes to lowercase characters!");
+      alert("You said YES to lowercase characters!");
       
   }
   else  {
-    alert("You said no to lowercase characters!")
+    alert("You said NO to lowercase characters!")
   }
-
+if (selectspecialCharacter === false && selectnumCharacters === false && selectlowerCaseCharacters === false && selectupperCaseCharacters === false) {
+    alert("You must select at least one character type! Please refresh your screen and start over!")
+}
 
   console.log(selectspecialCharacter, selectnumCharacters, selectlowerCaseCharacters, selectupperCaseCharacters);
 
+// Get references to the #generate elements
 
-//click the button to generate a password
 
 function generatePassword() {
     if (selectlowerCaseCharacters) {
@@ -95,7 +98,7 @@ function generatePassword() {
     
  
 
-// Get references to the #generate elements
+//click the button to generate a password
 
  
 // Write password to the #password input
