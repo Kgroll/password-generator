@@ -14,6 +14,8 @@ var passwordGroup = "";
 
  passwordLength = prompt("How long would you like the password to be? Please enter a number from 8 to 128."); 
 
+
+ 
     if (passwordLength<8){              
         alert("Your password does not meet the necessary requirements, please refresh the screen and enter a number from 8 to 128");
         determineLength();
@@ -21,8 +23,10 @@ var passwordGroup = "";
     }else if (passwordLength>128){
         alert("Your password does not meet the necessary requirements, please refresh the screen and enter a number from 8 to 128");
         determineLength();
-    }else if (isNaN(passwordLength)){
+    }else if  (isNaN(passwordLength)){
         alert("Your password does not meet the necessary requirements, please refresh the screen and enter a number from 8 to 128");
+        determineLength();
+
     }else{
         alert("Thank you! Please answer the following questions, you must say yes to at least 1 type of character!");
 }
@@ -44,8 +48,7 @@ var selectnumCharacters = confirm("Do you want to use numeric characters? Yes or
   if (selectnumCharacters) {
       alert("You said YES to numeric characters!");
       
-  }
-  else {
+  } else {
     alert("You said NO to numeric characters!")
   }
  
