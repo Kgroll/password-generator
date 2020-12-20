@@ -1,22 +1,28 @@
 # password-generator
 
-##Purpose
+Purpose:
+
 In the ever increasing need for increased security I wanted to develop an easy way to generate secure password.
 
-##Screenshot
+Screenshot:
+
 password generator pic.png
 
-##Built with
+Built with:
+
 Javascript
 HTML
 CSS
 
-##Website
+Website:
+
 https://kgroll.github.io/password-generator/
 
-##How to use
+How to use:
+
 Simply go to the website and follow the prompts!
 It' that easy to use!
 
-##Contributor
+Contributor:
+
 Kristen Groller
