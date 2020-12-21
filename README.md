@@ -21,7 +21,7 @@ https://kgroll.github.io/password-generator/
 How to use:
 
 Simply go to the website and follow the prompts!
-It' that easy to use!
+It's that easy to use!
 
 Contributor:
 
